@@ -1,10 +1,27 @@
 import 'babel-polyfill';
 import Assert from 'assert';
+import Base from '../../exercises/base/base';
 
-describe('Array', () => {
-  describe('#indexOf()', () => {
-    it('should return -1 when the value is not present', () => {
-      Assert.equal([1, 2, 3].indexOf(4), -1);
-    });
+describe('base ES6 comprehension', () => {
+  it('should return banana', () => {
+    Assert.equal(Base.variableDeclaration(), 'banana');
   });
+
+  it('should return apple', () => {
+    Assert.equal(Base.scopeUsed(), 'apple');
+  });
+
+  it('should return Hello Student welcome to ES6 Sfeir School', () => {
+    Assert.equal(Base.templateString(), 'Hello Student welcome to ES6 Sfeir School');
+  });
+
+  it('should return {x:45, y:54}', () => {
+    Assert.deepStrictEqual(Base.enhancedObjectSimple(), {x:45, y:54});
+  });
+
+  it('should return {hello: \'hello\',world_ES6: \'world ES6\'}', () => {
+    const name = 'ES6'
+    Assert.deepStrictEqual(Base.enhancedObjectParams(name), {hello: 'hello' ,world_ES6: 'world ES6'});
+  });
+
 });

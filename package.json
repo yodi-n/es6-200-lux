@@ -8,14 +8,8 @@
   },
   "babel": {
     "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
+      "stage-0",
+      "env"
     ]
   },
   "author": "NYO & NFR",
@@ -25,7 +19,8 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
   },
   "dependencies": {
     "mocha": "^5.1.1"
