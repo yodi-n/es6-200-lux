@@ -1,0 +1,11 @@
+{
+  "name": "es6-200-lux",
+  "version": "0.0.1",
+  "description": "Sferi school ES6 for Luxembourg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NYO & NFR",
+  "license": "ISC"
+}
