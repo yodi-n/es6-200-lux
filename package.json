@@ -4,8 +4,30 @@
   "description": "Sferi school ES6 for Luxembourg",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-base": "mocha --compilers js:babel-core/register test/base"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   },
   "author": "NYO & NFR",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "mocha": "^5.1.1"
+  }
 }
