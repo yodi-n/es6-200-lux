@@ -4,7 +4,7 @@
   "description": "Sferi school ES6 for Luxembourg",
   "main": "index.js",
   "scripts": {
-    "test-base": "mocha --compilers js:babel-core/register test/base"
+    "test-base": "mocha --require babel-core/register test/base"
   },
   "babel": {
     "presets": [
