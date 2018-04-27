@@ -93,6 +93,93 @@ const defaultParams = (x, y = 6, z = 10) => {
   return x + y + z;
 };
 
+/**
+ * @name base#restParams
+ * @type {function}
+ * @description function which let to test if restParams in function has understood
+ * @param {Number} x
+ * @param {String} y
+ * @param {*} z
+ * @returns {string}
+ */
+const restParams = (x, y, ...z) => {
+    return `${x}${y}${z.length}`;
+};
+
+/**
+ * @name base#sprredOperatorArray
+ * @type {function}
+ * @description function which let to test if spreedOperator on Array has understood
+ * @param {Array} x
+ * @returns {Array}
+ */
+const spreedOperatorArray = (x) => {
+  return [...x, 4];
+};
+
+/**
+ * @name base#spreedOperatorObject
+ * @type {function}
+ * @description function which let to test if spreedOperator on object has understood
+ * @param x
+ * @returns {{fruit: string}}
+ */
+const spreedOperatorObject = (x) => {
+  const banana = {
+    fruit: 'banana',
+  };
+  return {...x, ...banana};
+};
+
+
+/**
+ * @name base#destructArray
+ * @type {function}
+ * @description function which let to test if destruct Array has understood
+ * @param {Array} x
+ * @returns {Array} reverse x
+ */
+const destructArray = (x) => {
+  let [a,b] = x;
+  return [b,a];
+};
+
+/**
+ * @name base#destructObject
+ * @type {function}
+ * @description function which let to test if destruct Object has understood
+ * @param {Object} x
+ * @returns {String}
+ */
+const destructObject = (x) => {
+  const {fruit, country} = x;
+  return fruit;
+};
+
+/**
+ * @name base#destructArrayFunction
+ * @type {function}
+ * @description function which let to test if destruct array in fucntion has understood
+ * @param {string} x
+ * @param {string} y
+ * @returns {String}
+ */
+const destructArrayFunction = ([x,y]) => {
+  return x;
+};
+
+/**
+ * @name base#destructObjectFunction
+ * @type {function}
+ * @description function which let to test if destruct object in function has understood
+ * @param {string} name
+ * @param {string} email
+ * @returns {string}
+ */
+const destructObjectFunction= ({name, email}) => {
+  return name;
+};
+
 export default {
   variableDeclaration,
   scopeUsed,
@@ -101,4 +188,11 @@ export default {
   enhancedObjectParams,
   enhancedObjectFunction,
   defaultParams,
+  restParams,
+  spreedOperatorArray,
+  spreedOperatorObject,
+  destructArray,
+  destructObject,
+  destructArrayFunction,
+  destructObjectFunction,
 };

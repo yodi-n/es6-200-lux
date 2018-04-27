@@ -3,6 +3,7 @@ import Assert from 'assert';
 import Base from '../../exercises/base/base';
 
 describe('base ES6 comprehension', () => {
+
   it('should return banana', () => {
     Assert.equal(Base.variableDeclaration(), 'banana');
   });
@@ -32,5 +33,46 @@ describe('base ES6 comprehension', () => {
     Assert.deepStrictEqual(Base.defaultParams(4), 20);
   });
 
+  it('should return 2Plop3', () => {
+    Assert.equal(Base.restParams(2,'Plop', 'banana', {hello:'hello'},34), '2Plop3')
+  });
 
+  it('should return [1,2,3,4]', () => {
+    const array = [1,2,3];
+    Assert.deepStrictEqual(Base.spreedOperatorArray(array), [1,2,3,4]);
+  });
+
+  it('should return {fruit: \'banana\', country: \'Guadeloupe\'}', () => {
+    const object = {
+      country: 'Guadeloupe',
+    };
+    Assert.deepEqual(Base.spreedOperatorObject(object), {fruit: 'banana', country:'Guadeloupe'});
+  });
+
+  it('should return [2,1]', () => {
+    const array = [1,2];
+    Assert.deepStrictEqual(Base.destructArray(array), [2,1]);
+  });
+
+  it('should return banana', () => {
+    const object = {
+      fruit: 'banana',
+      country: 'Guadeloupe',
+    };
+    Assert.equal(Base.destructObject(object), 'banana');
+  });
+
+  it('should return Macedoine', () => {
+    const array = ['Macedoine', 'United States'];
+    Assert.strictEqual(Base.destructArrayFunction(array), 'Macedoine');
+  });
+
+  it('should return your name', () => {
+    const name = 'Nicolas';
+    const object = {
+      name,
+      email: 'sfeir@sfeir.com',
+    };
+    Assert.strictEqual(Base.destructObjectFunction(object), name);
+  });
 });
