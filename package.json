@@ -6,7 +6,9 @@
   "scripts": {
     "test-base": "mocha --require babel-core/register test/base",
     "test-arrow-function": "mocha --require babel-core/register test/arrow-function",
-    "test-promise": "mocha --require babel-core/register test/promise"
+    "test-promise": "mocha --require babel-core/register test/promise",
+    "test-module": "mocha --require babel-core/register test/module",
+    "test-class": "mocha --require babel-core/register test/class"
   },
   "babel": {
     "presets": [
