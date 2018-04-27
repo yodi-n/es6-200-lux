@@ -37,7 +37,7 @@ const templateString = () => {
   const hello = "Hello";
   const student = "Student";
   return `${hello} ${student} welcome to ES6 Sfeir School`;
-}
+};
 
 /**
  * @name base#enhancedObjectSimple
@@ -49,12 +49,12 @@ const enhancedObjectSimple = () => {
   const x = 45;
   const y = 54;
   return {x,y};
-}
+};
 
 /**
  * @name base#enhancedObjectParams
  * @description function which let to test if enhancedObject with params has understood
- * @param {*} name 
+ * @param {string} name 
  * @returns {Object}
  */
 const enhancedObjectParams = (name) => {
@@ -63,7 +63,35 @@ const enhancedObjectParams = (name) => {
     ['world_' + name]: `world ${name}`,
   };
   return object;
-}
+};
+
+/**
+ * @name base#enhanenhancedObjectFunction
+ * @type {function}
+ * @description function which let to test if enhancedObject with function has understood
+ * @return {string}
+ */
+const enhancedObjectFunction = () => {
+  const object = {
+    hello() {
+      return 'SFEIR';
+    },
+  };
+  return object.hello();
+};
+
+/**
+ * @name base#defaultParams
+ * @type {function}
+ * @description function which let to test if defaultParams in function has understood
+ * @param  {Number} x
+ * @param  {Number} y
+ * @param  {Number}z
+ * @returns {Number}
+ */
+const defaultParams = (x, y = 6, z = 10) => {
+  return x + y + z;
+};
 
 export default {
   variableDeclaration,
@@ -71,4 +99,6 @@ export default {
   templateString,
   enhancedObjectSimple,
   enhancedObjectParams,
+  enhancedObjectFunction,
+  defaultParams,
 };

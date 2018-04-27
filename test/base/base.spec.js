@@ -20,8 +20,17 @@ describe('base ES6 comprehension', () => {
   });
 
   it('should return {hello: \'hello\',world_ES6: \'world ES6\'}', () => {
-    const name = 'ES6'
+    const name = 'ES6';
     Assert.deepStrictEqual(Base.enhancedObjectParams(name), {hello: 'hello' ,world_ES6: 'world ES6'});
   });
+
+  it('should return SFEIR', () => {
+    Assert.equal(Base.enhancedObjectFunction(), 'SFEIR');
+  });
+
+  it('should return 20', () => {
+    Assert.deepStrictEqual(Base.defaultParams(4), 20);
+  });
+
 
 });
