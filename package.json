@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test-base": "mocha --require babel-core/register test/base",
-    "test-arrow-function": "mocha --require babel-core/register test/arrow-function"
+    "test-arrow-function": "mocha --require babel-core/register test/arrow-function",
+    "test-promise": "mocha --require babel-core/register test/promise"
   },
   "babel": {
     "presets": [
