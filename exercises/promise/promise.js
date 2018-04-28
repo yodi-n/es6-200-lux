@@ -1,7 +1,7 @@
 /**
  * @name promise#promiseResolve
  * @type {function}
- * @description function which let to test if resolve promise has understood
+ * @description Test if resolve promise has understood
  * @returns {Promise<any>}
  */
 const promiseResolve = () => {
@@ -16,7 +16,7 @@ const promiseResolve = () => {
 /**
  * @name promise#promiseReject
  * @type {function}
- * @description function which let to test if reject promise has understood
+ * @description Test if reject promise has understood
  * @returns {Promise<any>}
  */
 const promiseReject = () => {
@@ -30,7 +30,7 @@ const promiseReject = () => {
 /**
  * @name promise#promiseChained
  * @type {function}
- * @description function which let to test if
+ * @description Test if chane promises has understood
  * @returns {Promise<any>}
  */
 const promiseChained = () => {

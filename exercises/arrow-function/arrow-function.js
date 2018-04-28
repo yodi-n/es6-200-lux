@@ -1,7 +1,7 @@
 /**
  * @name arrow-function#simpleValue
  * @type {function}
- * @description function which let to test if return simple value with arrow function has understood
+ * @description Test if return simple value with arrow function has understood
  * @param {string} name
  * @returns {string}
  */
@@ -10,7 +10,7 @@ const simpleValue = (name) => name;
 /**
  * @name arrow-function#objectValue
  * @type {function}
- * @description function which let to test if return object value with arrow function has understood
+ * @description Test if return object value with arrow function has understood
  * @param {number} first
  * @param {number} second
  * @param {number} multiplicateur
@@ -24,7 +24,7 @@ const objectValue = ({first, second}, multiplicateur) => ({
 /**
  * @name arrow-function#caseOfThis
  * @type {function}
- * @description function which let to test if context of this has understood
+ * @description Test if context of this has understood
  * @param {array} num
  * @returns {Array}
  */

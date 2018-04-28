@@ -1,27 +1,18 @@
 export class Animal {
 
-  constructor(name) {
+  constructor(name, type) {
     this.name = name;
+    this.type = type;
   }
 
   /**
    * @name Animal#scream
    * @type {function}
-   * @description function which return a scream
+   * @description function to return the scream of an animal
    * @param {string} scream
-   * @returns {*}
+   * @returns {string}
    */
-   scream (scream) {
-    return scream
-  }
-
-  /**
-   * @name Animal#animalName
-   * @type {getter}
-   * @description getter of name of animal
-   * @returns {String}
-   */
-  get animalName () {
-    return this.name;
+  scream (scream) {
+    return scream;
   }
 }

@@ -1,30 +1,20 @@
-import { Animal } from "./animal";
+import {Animal} from "./animal";
 
 export class Cat extends Animal {
 
-  constructor(name, shout) {
-    super(name);
-    this.shout = shout;
-    this.name = name;
+  constructor(name, scream, type) {
+    super(name, type);
+    this.scream = scream;
   }
 
   /**
-   * @name cat#catScream
-   * @type {function}
-   * @description function which extend scream of animal
+   * @name Cat#catScream
+   * @type {function};
+   * @description return the scram of a cat
    * @returns {string}
    */
   catScream () {
-    return super.scream(this.shout)
+    return super.scream(this.scream);
   }
 
-  /**
-   * @name cat#catName
-   * @type {getter}
-   * @description getter of name of cat
-   * @returns {string}
-   */
-  get catName () {
-    return this.name;
-  }
 }
