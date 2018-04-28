@@ -4,11 +4,13 @@ import 'babel-polyfill';
  * @name base#variableDeclaration
  * @type {function}
  * @description function which let to create a variable with new syntax
- * @returns {string} banana
+ * @returns {string} fruit
  */
 const variableDeclaration = () => {
-  let banana = 'banana';
-  return banana;
+  /**
+   * Declare a variable fruit with new syntax variable declaration
+   * this function must return fruit var
+   */
 };
 
 
@@ -19,12 +21,11 @@ const variableDeclaration = () => {
  * @returns {string} banana
  */
 const scopeUsed = () => {
-  let banana  = 'banana';
-  if (banana === 'banana') {
-    const apple = 'apple';
-    banana = apple;
-  }
-  return banana;
+  /**
+   * Declare a variable fruit
+   * if banana === banana set banana to apple
+   * this function must be return fruit
+   */
 };
 
 /**
@@ -34,9 +35,11 @@ const scopeUsed = () => {
  * @returns {string} templateString
  */
 const templateString = () => {
-  const hello = "Hello";
-  const student = "Student";
-  return `${hello} ${student} welcome to ES6 Sfeir School`;
+  /**
+   * Declare a constant student
+   * Declare a constant hello
+   * this function must return this string: 'Hello Student welcome to ES6 Sfeir School'
+   */
 };
 
 /**
@@ -46,9 +49,11 @@ const templateString = () => {
  * @returns {Object}
  */
 const enhancedObjectSimple = () => {
-  const x = 45;
-  const y = 54;
-  return {x,y};
+  /**
+   * Declare a constant x = 45
+   * Declare a constant y = 54
+   * This function must be return an object like {x:45, y:54}
+   */
 };
 
 /**
@@ -58,11 +63,10 @@ const enhancedObjectSimple = () => {
  * @returns {Object}
  */
 const enhancedObjectParams = (name) => {
-  const object = {
-    hello: 'hello',
-    ['world_' + name]: `world ${name}`,
-  };
-  return object;
+  /**
+   * Declare an object which have for key hello and world_name
+   * this function must return this object: {hello: 'hello' ,world_ES6: 'world ES6'}
+   */
 };
 
 /**
@@ -72,12 +76,10 @@ const enhancedObjectParams = (name) => {
  * @return {string}
  */
 const enhancedObjectFunction = () => {
-  const object = {
-    hello() {
-      return 'SFEIR';
-    },
-  };
-  return object.hello();
+  /**
+   * Declare an object which have for key hello => value of hello is a function
+   * this function must be return the follow string: SFEIR
+   */
 };
 
 /**
@@ -89,8 +91,10 @@ const enhancedObjectFunction = () => {
  * @param  {Number}z
  * @returns {Number}
  */
-const defaultParams = (x, y = 6, z = 10) => {
-  return x + y + z;
+const defaultParams = () => {
+  /**
+   * This function must return the sum of params => sum must be equal to 20
+   */
 };
 
 /**
@@ -102,8 +106,10 @@ const defaultParams = (x, y = 6, z = 10) => {
  * @param {*} z
  * @returns {string}
  */
-const restParams = (x, y, ...z) => {
-    return `${x}${y}${z.length}`;
+const restParams = () => {
+  /**
+   * This function must return this follow string: '2Plop3'
+   */
 };
 
 /**
@@ -114,21 +120,26 @@ const restParams = (x, y, ...z) => {
  * @returns {Array}
  */
 const spreedOperatorArray = (x) => {
-  return [...x, 4];
+  /**
+   * This function must be return the following array: [1,2,3,4]
+   */
 };
 
 /**
  * @name base#spreedOperatorObject
  * @type {function}
  * @description function which let to test if spreedOperator on object has understood
- * @param x
- * @returns {{fruit: string}}
+ * @param {Object }x
+ * @returns {Object}
  */
 const spreedOperatorObject = (x) => {
   const banana = {
     fruit: 'banana',
   };
-  return {...x, ...banana};
+
+  /**
+   * This function must be return the following object: {fruit: 'banana', country:'Guadeloupe'}
+   */
 };
 
 
@@ -140,8 +151,9 @@ const spreedOperatorObject = (x) => {
  * @returns {Array} reverse x
  */
 const destructArray = (x) => {
-  let [a,b] = x;
-  return [b,a];
+  /**
+   * This function must be return the inverse array of the params
+   */
 };
 
 /**
@@ -152,20 +164,23 @@ const destructArray = (x) => {
  * @returns {String}
  */
 const destructObject = (x) => {
-  const {fruit, country} = x;
-  return fruit;
+  /**
+   * This function must return value of key 'fruit': banana
+   */
 };
 
 /**
  * @name base#destructArrayFunction
  * @type {function}
- * @description function which let to test if destruct array in fucntion has understood
- * @param {string} x
- * @param {string} y
- * @returns {String}
+ * @description function which let to test if destruct array in function has understood
+ * @param {Number} x
+ * @param {Number} y
+ * @returns {Number}
  */
-const destructArrayFunction = ([x,y]) => {
-  return x;
+const destructArrayFunction = () => {
+  /**
+   * This function must return the first value of the array pass in params without syntax array[0]
+   */
 };
 
 /**
@@ -176,8 +191,10 @@ const destructArrayFunction = ([x,y]) => {
  * @param {string} email
  * @returns {string}
  */
-const destructObjectFunction= ({name, email}) => {
-  return name;
+const destructObjectFunction= () => {
+  /**
+   * This function must return the value of the first key of the object pass in params without dot notation
+   */
 };
 
 export default {
