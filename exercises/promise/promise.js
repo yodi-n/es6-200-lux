@@ -5,12 +5,9 @@
  * @returns {Promise<any>}
  */
 const promiseResolve = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('I love ES6');
-    }, 500);
-  });
-
+  /**
+   * This function must be return a resolved Promise with the following string value: 'I love ES6' after 500ms
+   */
 };
 
 /**
@@ -20,11 +17,9 @@ const promiseResolve = () => {
  * @returns {Promise<any>}
  */
 const promiseReject = () => {
-  return new Promise ((resolve, reject) => {
-    setTimeout(() => {
-      reject('I hate rejection');
-    }, 500);
-  });
+  /**
+   * This function must be return a rejected Promise with the following string value: 'I hate rejection' after 500ms
+   */
 };
 
 /**
@@ -34,10 +29,11 @@ const promiseReject = () => {
  * @returns {Promise<any>}
  */
 const promiseChained = () => {
-  return new Promise((resolve, reject) => {
-    promiseResolve()
-      .then((value) => resolve(`${value} and SFEIR`));
-  });
+  /**
+   * This function must return a resolved promise with the following string: 'I love ES6 and SFEIR'
+   * For that you must add the string 'and SFEIR' after 'promiseResolve' (first exercise) has resolved
+   * You must chain the promise for doing this exercise
+   */
 };
 
 export default {
