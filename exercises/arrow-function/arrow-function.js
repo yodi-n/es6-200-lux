@@ -5,21 +5,16 @@
  * @param {string} name
  * @returns {string}
  */
-const simpleValue = (name) => name;
-
+const simpleValue = // Place your code here
 /**
  * @name arrow-function#objectValue
  * @type {function}
  * @description function which let to test if return object value with arrow function has understood
- * @param {number} first
- * @param {number} second
+ * @param {Object} x
  * @param {number} multiplicateur
  * @returns {{doubleFirst: number, doubleSecond: number}}
  */
-const objectValue = ({first, second}, multiplicateur) => ({
-  doubleFirst: first * multiplicateur,
-  doubleSecond: second * multiplicateur
-});
+const objectValue = // place your code here
 
 /**
  * @name arrow-function#caseOfThis
@@ -29,14 +24,14 @@ const objectValue = ({first, second}, multiplicateur) => ({
  * @returns {Array}
  */
 const caseOfThis = (num) => {
+  // Fix these code for test passing
   const object = {
     num,
     even: [],
     each() {
-      let that = this;
       num.map((value) => {
         if (value % 2 === 0) {
-          that.even.push(value);
+          even.push(value);
         }
       });
     },
