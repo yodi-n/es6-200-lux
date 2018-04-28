@@ -3,7 +3,9 @@
  * @description test if export named has understood
  * @type {string}
  */
-export const name = 'ES6 <3';
+
+// Export the variable name and transforme it to a constant as a named export
+let name = 'ES6 <3';
 
 /**
  * @name module#beautifulName
@@ -16,7 +18,9 @@ const beautifulName = (name) => {
   return `${name}, you have a beautiful name`;
 };
 
-export default {
-  beautifulName,
-};
+
+/**
+ * Export beautifulName as a default export
+ */
+
 
