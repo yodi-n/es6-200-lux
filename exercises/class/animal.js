@@ -1,27 +1,6 @@
-export class Animal {
-
-  constructor(name) {
-    this.name = name;
-  }
-
-  /**
-   * @name Animal#scream
-   * @type {function}
-   * @description function which return a scream
-   * @param {string} scream
-   * @returns {*}
-   */
-   scream (scream) {
-    return scream
-  }
-
-  /**
-   * @name Animal#animalName
-   * @type {getter}
-   * @description getter of name of animal
-   * @returns {String}
-   */
-  get animalName () {
-    return this.name;
-  }
-}
+/**
+ * Write a class Animal which will be exported as a named Export
+ * This class have a contructor which take a name as param
+ * This class has a function name scream which takes a scream as param and return a scream
+ * This class as a getter called animalName and return the name of animal
+ */
