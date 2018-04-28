@@ -3,7 +3,7 @@ import 'babel-polyfill';
 /**
  * @name base#variableDeclaration
  * @type {function}
- * @description function which let to create a variable with new syntax
+ * @description Test if creation variable with new syntax has understood
  * @returns {string} fruit
  */
 const variableDeclaration = () => {
@@ -17,7 +17,7 @@ const variableDeclaration = () => {
 /**
  * @name base#scopeUsed
  * @type {function}
- * @description function which let to test if variable scope has understood
+ * @description Test if variable scope has understood
  * @returns {string} banana
  */
 const scopeUsed = () => {
@@ -31,7 +31,7 @@ const scopeUsed = () => {
 /**
  * @name base#templateString
  * @type {function};
- * @description function which let to test if template string has understood
+ * @description Test if template string has understood
  * @returns {string} templateString
  */
 const templateString = () => {
@@ -45,7 +45,7 @@ const templateString = () => {
 /**
  * @name base#enhancedObjectSimple
  * @type {function}
- * @description function wich let to test if bascic enhancedObject has understood
+ * @description Test if basic enhancedObject has understood
  * @returns {Object}
  */
 const enhancedObjectSimple = () => {
@@ -58,7 +58,7 @@ const enhancedObjectSimple = () => {
 
 /**
  * @name base#enhancedObjectParams
- * @description function which let to test if enhancedObject with params has understood
+ * @description Test if enhancedObject with params has understood
  * @param {string} name 
  * @returns {Object}
  */
@@ -72,7 +72,7 @@ const enhancedObjectParams = (name) => {
 /**
  * @name base#enhanenhancedObjectFunction
  * @type {function}
- * @description function which let to test if enhancedObject with function has understood
+ * @description Test if enhancedObject with function has understood
  * @return {string}
  */
 const enhancedObjectFunction = () => {
@@ -85,7 +85,7 @@ const enhancedObjectFunction = () => {
 /**
  * @name base#defaultParams
  * @type {function}
- * @description function which let to test if defaultParams in function has understood
+ * @description Test if defaultParams in function has understood
  * @param  {Number} x
  * @param  {Number} y
  * @param  {Number}z
@@ -100,7 +100,7 @@ const defaultParams = () => {
 /**
  * @name base#restParams
  * @type {function}
- * @description function which let to test if restParams in function has understood
+ * @description Test if restParams in function has understood
  * @param {Number} x
  * @param {String} y
  * @param {*} z
@@ -115,7 +115,7 @@ const restParams = () => {
 /**
  * @name base#sprredOperatorArray
  * @type {function}
- * @description function which let to test if spreedOperator on Array has understood
+ * @description Test if spreedOperator on Array has understood
  * @param {Array} x
  * @returns {Array}
  */
@@ -128,7 +128,7 @@ const spreedOperatorArray = (x) => {
 /**
  * @name base#spreedOperatorObject
  * @type {function}
- * @description function which let to test if spreedOperator on object has understood
+ * @description Test if spreedOperator on object has understood
  * @param {Object }x
  * @returns {Object}
  */
@@ -146,7 +146,7 @@ const spreedOperatorObject = (x) => {
 /**
  * @name base#destructArray
  * @type {function}
- * @description function which let to test if destruct Array has understood
+ * @description test if destruct Array has understood
  * @param {Array} x
  * @returns {Array} reverse x
  */
@@ -159,7 +159,7 @@ const destructArray = (x) => {
 /**
  * @name base#destructObject
  * @type {function}
- * @description function which let to test if destruct Object has understood
+ * @description Test if destruct Object has understood
  * @param {Object} x
  * @returns {String}
  */
@@ -172,7 +172,7 @@ const destructObject = (x) => {
 /**
  * @name base#destructArrayFunction
  * @type {function}
- * @description function which let to test if destruct array in function has understood
+ * @description Test if destruct array in function has understood
  * @param {Number} x
  * @param {Number} y
  * @returns {Number}
@@ -186,7 +186,7 @@ const destructArrayFunction = () => {
 /**
  * @name base#destructObjectFunction
  * @type {function}
- * @description function which let to test if destruct object in function has understood
+ * @description Test if destruct object in function has understood
  * @param {string} name
  * @param {string} email
  * @returns {string}

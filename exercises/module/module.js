@@ -1,6 +1,6 @@
 /**
  * @name module#name
- * @description test if export named has understood
+ * @description Test if export named has understood
  * @type {string}
  */
 
@@ -10,7 +10,7 @@ let name = 'ES6 <3';
 /**
  * @name module#beautifulName
  * @type {function}
- * @description test if default export has understood
+ * @description Test if default export has understood
  * @param {string} name
  * @returns {string}
  */

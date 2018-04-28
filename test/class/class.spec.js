@@ -12,7 +12,7 @@ describe('Classes ES6 comprehension', () => {
   it('should return name of cate', () => {
     const cat = new Cat('Minou', 'GRRRRRRRR');
     Assert.strictEqual(cat.catName, 'Minou');
-    Assert.strictEqual(cat.name, 'Minou');
-    Assert.strictEqual(cat.animalName, 'Minou');
+    Assert.strictEqual(cat.name, ); // cat.name === ?
+    Assert.strictEqual(cat.animalName, ); // cat.animalName === ?
   });
 });
