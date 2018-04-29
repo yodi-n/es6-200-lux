@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import Assert from 'assert';
-import { iteratorArray, iteratorObject} from "../../exercises/iterator/iterator";
+import { iteratorArray, iteratorObject, generatorFunction} from "../../exercises/iterator/iterator";
 
 describe('Iterator ES6 compréhension', () => {
 
@@ -16,5 +16,9 @@ describe('Iterator ES6 compréhension', () => {
     const name = 'Nicolas';
     const lastName = 'FRIZZARIN';
     Assert.strictEqual(iteratorObject(name, lastName).get(name), lastName);
+  });
+
+  it('should return 13', () => {
+    Assert.deepStrictEqual(generatorFunction(2), 13);
   });
 });
