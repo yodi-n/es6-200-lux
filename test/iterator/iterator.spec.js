@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import Assert from 'assert';
-import { iteratorArray, iteratorObject} from "../../exercises/iterator/iterator";
+import { iteratorArray, iteratorObject, fibonacciGenerator} from "../../exercises/iterator/iterator";
 
 describe('Iterator ES6 compréhension', () => {
 
@@ -17,4 +17,8 @@ describe('Iterator ES6 compréhension', () => {
     const lastName = 'FRIZZARIN';
     Assert.strictEqual(iteratorObject(name, lastName).get(name), lastName);
   });
+
+  it('should return 13', () => {
+    Assert.deepStrictEqual(fibonacciGenerator(2), 13);
+  })
 });
