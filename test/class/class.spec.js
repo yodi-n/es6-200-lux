@@ -5,14 +5,13 @@ import { Cat } from '../../exercises/class/cat';
 describe('Classes ES6 comprehension', () => {
 
   it('should return Meowww', () => {
-    const cat = new Cat('Noiraud', 'Meowww');
+    const cat = new Cat('Noiraud', 'Meowww','cat');
     Assert.strictEqual(cat.catScream(),'Meowww');
   });
 
-  it('should return name of cate', () => {
-    const cat = new Cat('Minou', 'GRRRRRRRR');
-    Assert.strictEqual(cat.catName, 'Minou');
-    Assert.strictEqual(cat.name, ); // cat.name === ?
-    Assert.strictEqual(cat.animalName, ); // cat.animalName === ?
+  it('should return name and type of cate', () => {
+    const cat = new Cat('Minou', 'GRRRRRRRR','cat');
+    Assert.strictEqual(cat.name, 'Minou' );
+    Assert.strictEqual(cat.type, 'cat');
   });
 });
