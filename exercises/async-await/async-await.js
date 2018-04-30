@@ -6,5 +6,5 @@ import 'isomorphic-fetch';
  * @returns {Promise<Response>}
  */
 export default async () => {
-  return await fetch('https://jsonplaceholder.typicode.com/posts');
+  return await  (await fetch('https://jsonplaceholder.typicode.com/posts/1')).json();
 }
