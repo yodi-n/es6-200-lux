@@ -2,6 +2,8 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import { Cat } from '../../exercises/class/cat';
 
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
+
 describe('Classes ES6 comprehension', () => {
 
   it('should return Meowww', () => {

@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import Base from '../../exercises/base/base';
 
-// This file must not be modified => thanks for doing theses excercise correctly and seriously ;)
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
 
 describe('base ES6 comprehension', () => {
 

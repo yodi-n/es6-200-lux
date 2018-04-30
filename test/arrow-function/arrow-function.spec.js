@@ -2,6 +2,8 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import ArrowFunction from '../../exercises/arrow-function/arrow-function';
 
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
+
 describe('ES6 Arrow Function', () => {
 
   it('should return name', () => {

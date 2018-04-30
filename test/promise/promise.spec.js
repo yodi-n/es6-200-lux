@@ -2,6 +2,8 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import Promise from '../../exercises/promise/promise';
 
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
+
 describe('Promise ES6', () => {
 
   it('should resolve after 500ms I love ES6', (done) => {
