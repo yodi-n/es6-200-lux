@@ -2,7 +2,8 @@ import {Animal} from "./animal";
 
 export class Cat extends Animal {
 
-  constructor(name, scream, type) {
+  constructor(name, scream) {
+    const type = "cat";
     super(name, type);
     this.scream = scream;
   }
