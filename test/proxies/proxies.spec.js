@@ -2,6 +2,8 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import { trap } from '../../exercises/proxies/proxies';
 
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
+
 describe('Proxies ES6 comprehension', () => {
 
   it('should return the length of array == 2', () => {

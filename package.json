@@ -9,7 +9,10 @@
     "test-promise": "mocha --require babel-core/register test/promise",
     "test-module": "mocha --require babel-core/register test/module",
     "test-class": "mocha --require babel-core/register test/class",
-    "test-iterator": "mocha --require babel-core/register test/iterator"
+    "test-iterator": "mocha --require babel-core/register test/iterator",
+    "test-symbol": "mocha --require babel-core/register test/symbol",
+    "test-proxies": "mocha --require babel-core/register test/proxies",
+    "test-async-await": "mocha --require babel-core/register test/async-await"
   },
   "babel": {
     "presets": [
@@ -26,7 +29,9 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.19.1"
+    "es6-promise": "^4.2.4",
+    "eslint": "^4.19.1",
+    "isomorphic-fetch": "^2.2.1"
   },
   "dependencies": {
     "mocha": "^5.1.1"

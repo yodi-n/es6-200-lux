@@ -6,7 +6,7 @@
  */
 export default (object) => {
   /**
-   * Add your code here
+   * Write your code here
    */
   return [...object];
 };

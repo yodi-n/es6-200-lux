@@ -2,6 +2,8 @@ import 'babel-polyfill';
 import Assert from 'assert';
 import Symbol from '../../exercises/symbol/symbol';
 
+// This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
+
 describe('Symbol ES6 comprehension', () => {
 
   it('return an array', () => {

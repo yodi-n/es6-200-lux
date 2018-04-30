@@ -9,7 +9,7 @@ import 'babel-polyfill';
 const variableDeclaration = () => {
   /**
    * Declare a variable fruit with new syntax variable declaration
-   * this function must return fruit var
+   * This function must return fruit var
    */
 };
 
@@ -24,7 +24,7 @@ const scopeUsed = () => {
   /**
    * Declare a variable fruit
    * if banana === banana set banana to apple
-   * this function must be return fruit
+   * This function must be return fruit
    */
 };
 
@@ -38,7 +38,7 @@ const templateString = () => {
   /**
    * Declare a constant student
    * Declare a constant hello
-   * this function must return this string: 'Hello Student welcome to ES6 Sfeir School'
+   * This function must return this string: 'Hello Student welcome to ES6 Sfeir School'
    */
 };
 
@@ -65,7 +65,7 @@ const enhancedObjectSimple = () => {
 const enhancedObjectParams = (name) => {
   /**
    * Declare an object which have for key hello and world_name
-   * this function must return this object: {hello: 'hello' ,world_ES6: 'world ES6'}
+   * This function must return this object: {hello: 'hello' ,world_ES6: 'world ES6'}
    */
 };
 
@@ -78,7 +78,7 @@ const enhancedObjectParams = (name) => {
 const enhancedObjectFunction = () => {
   /**
    * Declare an object which have for key hello => value of hello is a function
-   * this function must be return the follow string: SFEIR
+   * This function must be return the follow string: SFEIR
    */
 };
 

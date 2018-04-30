@@ -5,7 +5,7 @@
  * @param {string} name
  * @returns {string}
  */
-const simpleValue = // Place your code here
+const simpleValue = // Write your code here
 /**
  * @name arrow-function#objectValue
  * @type {function}
@@ -14,7 +14,7 @@ const simpleValue = // Place your code here
  * @param {number} multiplicateur
  * @returns {{doubleFirst: number, doubleSecond: number}}
  */
-const objectValue = // place your code here
+const objectValue = // Write your code here
 
 /**
  * @name arrow-function#caseOfThis

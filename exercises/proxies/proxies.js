@@ -6,7 +6,7 @@
 
 export const trap = {
   /**
-   * Tape your code here
+   * Write your code here
    */
 };
 
