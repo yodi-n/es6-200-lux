@@ -10,7 +10,8 @@
     "test-module": "mocha --require babel-core/register test/module",
     "test-class": "mocha --require babel-core/register test/class",
     "test-iterator": "mocha --require babel-core/register test/iterator",
-    "test-symbol": "mocha --require babel-core/register test/symbol"
+    "test-symbol": "mocha --require babel-core/register test/symbol",
+    "test-proxies":"mocha --require babel-core/register test/proxies"
   },
   "babel": {
     "presets": [
