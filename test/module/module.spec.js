@@ -4,6 +4,7 @@ import Assert from 'assert';
 /**
  * Here you must import what export module.js file
  */
+import Module, { name } from '../../exercises/module/module';
 
 
 // This file must not be modified => thanks for doing theses exercises correctly and seriously ;)
